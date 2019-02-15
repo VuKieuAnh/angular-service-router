@@ -28,6 +28,17 @@ export class DictionaryService {
     }
     return 'Not found';
   }
+
+  searchVi(key: string): string {
+    if (!key) {
+      return'';
+    }
+    const k = this.words.find(item => item.meaning === key.toLowerCase());
+    if (k) {
+      return k.key;
+    }
+    return 'not found';
+  }
 }
 export interface IWord {
   key: string;

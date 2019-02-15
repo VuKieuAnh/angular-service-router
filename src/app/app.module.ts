@@ -4,6 +4,7 @@ import {Injectable, NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DictionaryComponent } from './dictionary/dictionary.component';
+import { DictionarayViComponent } from './dictionaray-vi/dictionaray-vi.component';
 
 // @Injectable()
 // export class DictionaryService {
@@ -12,7 +13,8 @@ import { DictionaryComponent } from './dictionary/dictionary.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DictionaryComponent
+    DictionaryComponent,
+    DictionarayViComponent
   ],
   imports: [
     BrowserModule,
