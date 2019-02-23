@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
 
 export class DictionaryService {
 
-  constructor() { }
+  constructor() {
+  }
 
   private words: IWord[] = [
     {key: 'service', meaning: 'dịch vụ'},
@@ -29,9 +30,13 @@ export class DictionaryService {
     return 'Not found';
   }
 
+  getAll(): IWord[] {
+    return this.words;
+  }
+
   searchVi(key: string): string {
     if (!key) {
-      return'';
+      return '';
     }
     const k = this.words.find(item => item.meaning === key.toLowerCase());
     if (k) {
@@ -40,6 +45,7 @@ export class DictionaryService {
     return 'not found';
   }
 }
+
 export interface IWord {
   key: string;
   meaning: string;

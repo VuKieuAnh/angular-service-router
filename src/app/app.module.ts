@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import { DictionarayViComponent } from './dictionaray-vi/dictionaray-vi.component';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
+import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 
 // @Injectable()
 // export class DictionaryService {
@@ -16,7 +17,8 @@ import { DictionaryPageComponent } from './dictionary-page/dictionary-page.compo
     AppComponent,
     DictionaryComponent,
     DictionarayViComponent,
-    DictionaryPageComponent
+    DictionaryPageComponent,
+    DictionaryDetailComponent
   ],
   imports: [
     BrowserModule,
